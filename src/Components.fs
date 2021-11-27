@@ -20,6 +20,7 @@ type Components =
         Html.div [
             Html.h1 count
             Html.button [
+                prop.classes [ "text-sm border px-6 py-2 mt-2 rounded bg-gray-200" ]
                 prop.onClick (fun _ -> setCount(count + 1))
                 prop.text "Increment"
             ]

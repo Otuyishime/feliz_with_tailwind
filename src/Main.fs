@@ -6,8 +6,9 @@ open Browser.Dom
 open Fable.Core.JsInterop
 
 importSideEffects "./styles/global.scss"
+importSideEffects "./styles/tailwind.css";
 
 ReactDOM.render(
-    Components.HelloWorld(),
+    Components.Router(),
     document.getElementById "feliz-app"
 )
